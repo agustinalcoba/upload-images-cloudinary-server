@@ -6,7 +6,7 @@ const routes = require("./api/endPoints");
 app.use(express.json());
 
 const corsConfig = {
-  origin: ["*"],
+  origin: "*",
   credentials: true, // Permitir enviar cookies
 };
 app.use(cors(corsConfig));
