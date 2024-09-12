@@ -9,7 +9,7 @@ const corsConfig = {
   origin: [
     "http://localhost:3000",
     "http://localhost:5173",
-    "upload-images-cloudinary.vercel.app",
+    "https://upload-images-cloudinary.vercel.app", 
   ],
   credentials: true, // Permitir enviar cookies
 };
