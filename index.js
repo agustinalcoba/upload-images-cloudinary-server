@@ -6,7 +6,11 @@ const routes = require("./api/endPoints");
 app.use(express.json());
 
 const corsConfig = {
-  origin: ["http://localhost:3000", "http://localhost:5173"],
+  origin: [
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "upload-images-cloudinary.vercel.app",
+  ],
   credentials: true, // Permitir enviar cookies
 };
 app.use(cors(corsConfig));
